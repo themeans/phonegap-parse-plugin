@@ -40,21 +40,19 @@
 
 - (void)setInstallationBadge:(CDVInvokedUrlCommand*) command
 {
-    int badgeNumber = (int)[command.arguments objectAtIndex:0];
+    int badgeNumber = [[command.arguments objectAtIndex:0] integerValue];
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     
-    if (currentInstallation.badge != 0) {
-        currentInstallation.badge = badgeNumber;
-        [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            // TODO: Needs proper error handling
-            // if (error) {
-            //     [currentInstallation saveEventually];
-            // }
-            CDVPluginResult* pluginResult = nil;
-            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:badgeNumber];
-            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-        }];
-    }
+    currentInstallation.badge = badgeNumber;
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        // TODO: Needs proper error handling
+        // if (error) {
+        //     [currentInstallation saveEventually];
+        // }
+        CDVPluginResult* pluginResult = nil;
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:badgeNumber];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }];
     
 }
 
