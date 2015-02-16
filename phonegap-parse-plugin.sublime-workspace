@@ -568,10 +568,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/xaunlopez/Projects/code/themeans/phonegap-parse-plugin"
+		"/Users/xaunlopez/Projects/code/themeans/phonegap-parse-plugin",
+		"/Users/xaunlopez/Projects/code/themeans/phonegap-parse-plugin/src"
 	],
 	"file_history":
 	[
+		"/Users/xaunlopez/Projects/code/themeans/phonegap-parse-plugin/README.md",
 		"/Users/xaunlopez/Projects/code/themeans/phonegap-parse-plugin/plugin.xml",
 		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/package.json",
 		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/hooks/after_prepare/010_add_platform_class.js",
@@ -698,8 +700,7 @@
 		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/plugins/com.phonegap.plugins.barcodescanner/src/android/LibraryProject/src/com/google/zxing/common/reedsolomon/ReedSolomonEncoder.java",
 		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/plugins/com.phonegap.plugins.barcodescanner/src/android/LibraryProject/src/com/google/zxing/common/reedsolomon/ReedSolomonDecoder.java",
 		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/node_modules/ionic/node_modules/npm/test/tap/shrinkwrap-empty-deps.js",
-		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/app/scripts/services/utilities.js",
-		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/node_modules/ionic/node_modules/optimist/example/line_count_options.js"
+		"/Users/xaunlopez/Projects/code/themeans/FAL-Scanner/app/scripts/services/utilities.js"
 	],
 	"find":
 	{
