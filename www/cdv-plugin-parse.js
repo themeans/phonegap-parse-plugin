@@ -29,6 +29,16 @@ var parsePlugin = {
         );
     },
 
+    setInstallationBadge: function(badgeNumber, successCallback, errorCallback) {
+        cordova.exec(
+            successCallback,
+            errorCallback,
+            'ParsePlugin',
+            'setInstallationBadge',
+            [badgeNumber]
+        );
+    },
+
     getSubscriptions: function(successCallback, errorCallback) {
         cordova.exec(
             successCallback,
